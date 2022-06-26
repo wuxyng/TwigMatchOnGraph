@@ -17,21 +17,19 @@ public class Consts {
 	public static final int EOF = 2;
 	public static final int CLOSED = 3;
 	
-	public static final String INDIR = "E:\\experiments\\GraHomMat\\input\\";
-	public static final String OUTDIR = "E:\\experiments\\GraHomMat\\output\\";
 	
-	public static final String INDIR_TREE = "E:\\experiments\\TwigOnDag\\input\\";
-	public static final String OUTDIR_TREE = "E:\\experiments\\TwigOnDag\\output\\";
-	
+	public static final String HOME  = "/home/work";
+	public static final String INDIR  = HOME + "/experiments/input/";
+	public static final String OUTDIR = HOME + "/experiments/output/";
 	
 	public static enum status_vals {success, timeout, outOfMemory, exceedLimit, failure};
 	public static enum OrderType {RI, GQL, HYB};
 	public static String OUTFILE = "";
 	
 	public static int FirstK = 100000;
-	public static int TimeLimit = 60; // minutes
-	public static long OutputLimit = 10000000; 
-	public static int PruneLimit = 5; //10;
+	public static int TimeLimit = 10; // minutes
+	public static int OutputLimit = 10000000; //100000000;   //1000000000; 
+	public static int PruneLimit = 10;
 	public static int K = 5;
 	public static int D = 320 * K;
 	public static enum Color {
