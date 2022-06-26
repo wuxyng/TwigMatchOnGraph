@@ -16,12 +16,10 @@ public class Consts {
 	public static final int OPEN = 1;
 	public static final int EOF = 2;
 	public static final int CLOSED = 3;
-	
-	public static final String INDIR = "E:\\experiments\\TwigOnDag\\input\\";
-	public static final String OUTDIR = "E:\\experiments\\TwigOnDag\\output\\";
-	
-	public static final String VIEWDIR = "E:\\experiments\\TwigOnDag\\views\\";
-	public static final String MATDIR = "E:\\experiments\\TwigOnDag\\viewmat\\";
+		
+	public static final String HOME  = "/home/work";
+	public static final String INDIR  = HOME + "/experiments/input/";
+	public static final String OUTDIR = HOME + "/experiments/output/";
 	
 	public static String OUTFILE = "";
 	
