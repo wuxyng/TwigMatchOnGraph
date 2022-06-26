@@ -7,22 +7,17 @@ We develop a novel framework to address the problem of efficiently finding homom
     README ...................  This file
     grami ....................  script to run GraMi
     Datasets/ ................  Example graphs
+    JARs/ ....................  Directory containing external JARs
     TwigOnGraph/ .............  Sources for BUP and SIM as well as BJ
     TwigOnGraph_bas/ .........  Sources for basic implementation of BUP and SIM
     TwigStackDBFL/ ...........  Sources for the representative TJ approach TwigStackD 
-                                using BFL reachability index
-    TwigStackDSSPI/ ..........  Sources for TwigStackD using SSPI reachability index
+                                using the BFL reachability index
+    TwigStackDSSPI/ ..........  Sources for TwigStackD using the SSPI reachability index
 
 
 ## Requirements
 
 Java JRE v1.8.0 or later
-
-## Installation
-
-    - Uncompress grami using any compression tool
-    - Build Java binaries using the "build" script file
-    - Run GraMi using "grami" script
 
 ## Examples
 
