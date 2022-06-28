@@ -96,9 +96,9 @@ public class SimFlt {
 		} else {
 
 			if (enumByBacktracking)
-				this.enumTuples_BT();
-			else if (simfilter)
 				this.enumTuples_TD();
+			else if (simfilter)
+				this.enumTuples_DP();
 
 		}
 
@@ -197,7 +197,7 @@ public class SimFlt {
 	 *************************/
 
 	// enumeration by back tracking
-	private void enumTuples_BT() throws LimitExceededException {
+	private void enumTuples_TD() throws LimitExceededException {
 
 		PoolEntry[] match = new PoolEntry[mQuery.V];
 		int[] count = new int[mQuery.V];
@@ -260,7 +260,7 @@ public class SimFlt {
 	 *************************/
 	
 	
-	private void enumTuples_TD() throws LimitExceededException {
+	private void enumTuples_DP() throws LimitExceededException {
 
 		TreeTupleEnumCP ttenum = new TreeTupleEnumCP(mQuery, mPool);
 		

@@ -87,9 +87,9 @@ public class BUP {
 			} else {
 
 				if (enumByBacktracking)
-					this.enumTuples_BT();
-				else
 					this.enumTuples_TD();
+				else
+					this.enumTuples_DP();
 
 			}
 
@@ -267,7 +267,7 @@ public class BUP {
 	 * 
 	 *************************/
 
-	private void enumTuples_BT() throws LimitExceededException {
+	private void enumTuples_TD() throws LimitExceededException {
 
 		PoolEntry[] match = new PoolEntry[mQuery.V];
 		int[] count = new int[mQuery.V];
@@ -388,7 +388,7 @@ public class BUP {
 	 * 
 	 *************************/
 
-	private void enumTuples_TD() throws LimitExceededException {
+	private void enumTuples_DP() throws LimitExceededException {
 
 		TreeTupleEnumCP ttenum = new TreeTupleEnumCP(mQuery, mPool);
 		//TreeTupleEnumBJ ttenum = new TreeTupleEnumBJ(mQuery, mPool);
