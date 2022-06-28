@@ -5,11 +5,10 @@ We develop a novel framework to address the problem of efficiently finding homom
 ## Contents
 
     README ...................  This file
-    grami ....................  script to run GraMi
-    Datasets/ ................  Example graphs
+    Scripts ..................  Directory containing scripts to run the algorithms
+    Datasets/ ................  Example graphs and queries
     JARs/ ....................  Directory containing external JARs
     TwigOnGraph/ .............  Sources for BUP and SIM as well as BJ
-    TwigOnGraph_bas/ .........  Sources for basic implementation of BUP and SIM
     TwigStackDBFL/ ...........  Sources for the representative TJ approach TwigStackD 
                                 using the BFL reachability index
     TwigStackDSSPI/ ..........  Sources for TwigStackD using the SSPI reachability index
@@ -18,13 +17,6 @@ We develop a novel framework to address the problem of efficiently finding homom
 ## Requirements
 
 Java JRE v1.8.0 or later
-
-## Examples
-
-    1- Show GraMi breif help: "./grami -h"
-    2- Find frequent subgraphs in the "mico" undirected graph, with minimum frequency = 14000: "./grami -f mico.lg -s 14000 -t 0 -p 0"
-    3- Find frequent subgraphs in the "mico" undirected graph, with minimum frequency = 9340 and approximation: "./grami -f mico.lg -s 9340 -t 0 -p 0 -approxA 0.0002 -approxB=0"
-    4- Find frequent patterns in the "citeseer" directed graph, with minimum frequency = 160 and maximum distance bound (edge weight) = 200: "./grami -f citeseer.lg -s 160 -t 1 -p 1 -d 200"
 
 ## Input
 Both the input query graph and data graph are vertex-labeled.
