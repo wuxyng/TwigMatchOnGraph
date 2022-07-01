@@ -26,6 +26,7 @@ id is started from 0 and the range is [0,N - 1] where V is the vertex set. The 0
 
 Example:
 
+```
 #q 0
 v 0 0 2
 v 1 1 3
@@ -38,7 +39,7 @@ e 1 2 1
 e 1 3 1
 e 2 4 0
 e 3 4 0
-
+```
 
 ## Experiment Datasets
 
@@ -47,3 +48,4 @@ The real world datasets and the corresponding query sets used in our paper as we
 ## Contributors
 
     @Xiaoying Wu
+
