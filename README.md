@@ -8,10 +8,10 @@ We develop a novel framework to address the problem of efficiently finding homom
     README ...................  This file
     twigOnGraph ..............  Script to run the algorithms
     test/  ...................  Example graphs and queries
-    JARs/ ....................  Directory containing external JARs
-    TwigOnGraph/ .............  Sources for BUP and SIM as well as BJ
-    TwigOnGraph_bas/ .........  Sources for basic implementation of BUP and SIM
-    TwigStackDBFL/ ...........  Sources for the representative TJ approach TwigStackD 
+    JARs/ ....................  External JARs
+    TwigOnGraph/ .............  Sources for BUP and SIM as well as EJ
+    TwigOnGraph_bas/ .........  Sources for basic version of BUP and SIM
+    TwigStackDBFL/ ...........  Sources for the representative PJ approach TwigStackD 
                                 using the BFL reachability index
     TwigStackDSSPI/ ..........  Sources for TwigStackD using the SSPI reachability index
 
@@ -22,18 +22,18 @@ Java JRE v1.8.0 or later
 
 ## Input
 Both the input query graph and data graph are vertex-labeled. A vertex and an edge are formatted
-as 'v VertexID LabelId' and 'e VertexId VertexId EdgeType' respectively. Note that we require that the vertex
-id is started from 0 and the range is [0,N - 1] where V is the vertex set. The 0 and 1 values of EdgeType denote a child and a descendant edge, respectively. The following is an input sample. You can also find sample data sets and query sets under the test folder.
+as 'v VertexID LabelID' and 'e VertexID VertexID EdgeType' respectively. Note that we require that the vertex
+id ranges over [0,|V| - 1] where V is the vertex set. The 0 and 1 values of EdgeType denote a child and a descendant edge, respectively. The following is an input sample. You can also find sample data sets and query sets in the test folder.
 
 Example:
 
 ```
 #q 0
-v 0 0 2
-v 1 1 3
-v 2 2 3
-v 3 1 2
-v 4 2 2
+v 0 0 
+v 1 1 
+v 2 2 
+v 3 1 
+v 4 2 
 e 0 1 0
 e 0 2 0
 e 1 2 1 
